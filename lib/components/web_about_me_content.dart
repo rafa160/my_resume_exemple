@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:rafael_resume_cv/utils/styles.dart';
-// import 'package:js/js.dart' as js;
+import 'dart:js' as js;
 
 class WebAboutMeContent extends StatelessWidget {
   const WebAboutMeContent({Key? key}) : super(key: key);
@@ -159,7 +159,8 @@ class WebAboutMeContent extends StatelessWidget {
                       ),
                       GestureDetector(
                           onTap: (){
-                            // js.callMethod('open', ['https://github.com/rafa160']);
+
+                            js.context.callMethod('open', ['https://github.com/rafa160']);
                           },
                           child: Text('https://github.com/rafa160', style: mobileSubtitle,)),
                     ],
@@ -175,7 +176,7 @@ class WebAboutMeContent extends StatelessWidget {
                       ),
                       GestureDetector(
                           onTap: () {
-                            // js.context.callMethod('open', ['https://rafael-resume-cv.web.app/#/']);
+                            js.context.callMethod('open', ['https://rafael-resume-cv.web.app/#/']);
                           },
                           child: Text('https://rafael-resume-cv.web.app/#/', style: mobileSubtitle,)),
                     ],

@@ -48,7 +48,7 @@ class FilledJobWebComponent extends StatelessWidget {
             circularWidth: 25,
             height: 260,
             width: 5,
-            date: '15/01/2020 – 25/07/2021',
+            date: '15/01/2021 – 25/07/2021',
             location: ' – Fortaleza, Brazil',
             position: 'Flutter Developer',
             company: 'Casa Magalhães',
